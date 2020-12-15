@@ -4,7 +4,7 @@ for i in range(0,len(lines)):
     lines[i]=int(lines[i])
     lineDict[lines[i]]=i+1
 lines.append(0)
-for i in range(len(lines),2020):
+for i in range(len(lines),30000000):
 
     if lines[i-1] in lineDict:
         lines.append(i-lineDict[lines[i-1]])
@@ -13,7 +13,5 @@ for i in range(len(lines),2020):
 
     lineDict[lines[i-1]]=i
 
-print(lines[2019])
-
-
+print(lines[30000000-1])
 
